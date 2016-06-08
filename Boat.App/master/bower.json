@@ -1,0 +1,24 @@
+{
+  "name": "boat.app",
+  "authors": [
+    "Kent <kongdongfang@shinetechchina.com>"
+  ],
+  "description": "angualrjs",
+  "main": "index.html",
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6"
+  }
+}
