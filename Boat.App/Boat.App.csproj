@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\pages\login.html" />
     <Content Include="master\js\app.module.js" />
     <Content Include="master\js\modules\core\core.module.js" />
     <Content Include="packages.config" />
@@ -121,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\css\" />
-    <Folder Include="app\pages\" />
     <Folder Include="app\views\" />
   </ItemGroup>
   <PropertyGroup>

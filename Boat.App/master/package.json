@@ -1,22 +1,25 @@
 {
-	"name": "boat",
-	"version": "1.0.0",
-	"description": "Boat -- angularjs demo",
-	"repository": {
-		"type": "git",
-		"url": ""
-	},
-	"main": "index.js",
-	"scripts": {
-		"prestart": "bower install",
-		"start": "npm install",
-		"poststart": "gulp"
-	},
-	"author": "",
-	"license": "ISC",
+  "name": "boat",
+  "version": "1.0.0",
+  "description": "Boat -- angularjs demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kongdf123/boat.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "prestart": "bower install",
+    "start": "npm install",
+    "poststart": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
 	"devDependencies": {
+		"css-flip": "^0.5.0",
+		"del": "^2.2.0",
+		"graceful-fs": "^4.1.4",
 		"gulp": "^3.9.1",
-		"gulp-jshint": "^2.0.1",
+		"jshint": "^2.9.2",
 		"gulp-angular-htmlify": "^0.4.0",
 		"gulp-angular-templatecache": "^1.7.0",
 		"gulp-changed": "^1.1.0",
@@ -30,6 +33,7 @@
 		"gulp-ignore": "^1.2.1",
 		"gulp-inject": "^1.3.1",
 		"gulp-jade": "^0.8.0",
+		"gulp-jshint": "^1.11.0",
 		"gulp-jsvalidate": "^2.0.0",
 		"gulp-less": "^1.3.9",
 		"gulp-livereload": "^2.1.1",
@@ -41,6 +45,10 @@
 		"gulp-sourcemaps": "^1.3.0",
 		"gulp-sync": "^0.1.4",
 		"gulp-uglify": "^1.1.0",
-		"gulp-util": "^3.0.1"
+		"gulp-util": "^3.0.1",
+		"jshint-stylish": "^2.0.0",
+		"marked": "^0.3.2",
+		"through2": "^0.6.3",
+		"yargs": "^3.7.2"
 	}
 }

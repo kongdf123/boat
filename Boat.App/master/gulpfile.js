@@ -25,7 +25,7 @@ var build = {
 };
 
 //merge *.js
-gulp.task('scripts:app', function () {
+gulp.task('scripts-app', function () {
     
     return gulp.src(source.scripts)
             .pipe($.jsvalidate())
