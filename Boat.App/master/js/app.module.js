@@ -7,6 +7,7 @@
     angular
         .module('com.boat.app', [
             'app.core',
-            'app.routes'
+            //'app.routes',
+            'ui.router'
         ]);
 })();

@@ -1,50 +1,22 @@
-﻿<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Application name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/Home/About">About</a></li>
-                <li><a href="/Home/Contact">Contact</a></li>
-                <li><a href="/BootstrapDemo">BootstrapDemo</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/Account/Register" id="registerLink">Register</a></li>
-                <li><a href="/Account/Login" id="loginLink">Log in</a></li>
-            </ul>
-
-        </div>
-    </div>
-</div>
-<div class="container body-content">
-
-
-
+﻿<div class="container body-content" ng-controller="LoginCtrl">
     <h2>Log in.</h2>
     <div class="row">
         <div class="col-md-8">
-            <section id="loginForm">
+            <section id="loginForm" name="loginForm">
                 <form action="/Account/Login" class="form-horizontal" method="post" role="form">
                     <input name="__RequestVerificationToken" type="hidden" value="S3jhSChQqSTxG1O4IJwpoUmaAeMEhsSNlQbpZs599gQGjiuKuQNO5a0rSBm5YzCY65Bq9gnmda2rP9lbDwwE3lMQGvEMRfr3o5LUjwtkh1w1" />                <h4>Use a local account to log in.</h4>
                     <hr />
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="Email">Email</label>
                         <div class="col-md-10">
-                            <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" type="text" value="" />
+                            <input ng-model="data.username" class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" type="text" value="" />
                             <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="Password">Password</label>
                         <div class="col-md-10">
-                            <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" />
+                            <input ng-model="data.password" class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" />
                             <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
                         </div>
                     </div>
@@ -58,7 +30,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Log in" class="btn btn-default" />
+                            <input type="button" value="Log in" class="btn btn-default" ng-click="login(data)"/>
                         </div>
                     </div>
                     <p>
@@ -66,27 +38,6 @@
                     </p>
                 </form>
             </section>
-        </div>
-        <div class="col-md-4">
-            <section id="socialLoginForm">
-
-                <h4>Use another service to log in.</h4>
-                <hr />
-                <form action="/Account/ExternalLogin" method="post">
-                    <input name="__RequestVerificationToken" type="hidden" value="P_Cr0On3nt08Q7D-YeB0_bFMJBEfEbMa6Y5lANdOQqD72uJLl7TblH9BDZCEEw9bbXO__m9tuimjDo7tQZ1cPOTqLMSx916R2_F21nUnE5M1" />            <div id="socialLoginList">
-                        <p>
-                            <button type="submit" class="btn btn-default" id="Microsoft" name="provider" value="Microsoft" title="Log in using your Microsoft account">Microsoft</button>
-                        </p>
-                    </div>
-                </form>
-
-            </section>
-        </div>
-    </div>
-
-
-    <hr />
-    <footer>
-        <p>&copy; 2016 - My ASP.NET Application</p>
-    </footer>
+        </div> 
+    </div> 
 </div>

@@ -95,7 +95,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\pages\login.html" />
+    <Content Include="app\views\app.html" />
+    <Content Include="app\views\blog.html" />
+    <Content Include="app\views\blog.list.html" />
+    <Content Include="app\views\partials\footer.html" />
+    <Content Include="app\views\partials\header.html" />
+    <Content Include="app\views\product.html" />
+    <Content Include="app\views\product.list.html" />
     <Content Include="master\js\app.module.js" />
+    <Content Include="master\js\modules\pages\access-login-controller.js" />
+    <Content Include="master\js\modules\pages\pages.module.js" />
+    <Content Include="master\js\modules\core\core.config.js" />
+    <Content Include="master\js\modules\core\core.constant.js" />
     <Content Include="master\js\modules\core\core.module.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -122,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\css\" />
-    <Folder Include="app\views\" />
+    <Folder Include="master\js\modules\blog\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
